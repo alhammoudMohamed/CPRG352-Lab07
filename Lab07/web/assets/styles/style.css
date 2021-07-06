@@ -5,7 +5,7 @@ body {
 
 .flex-container {
     display: flex;
-    width: 1100px;
+    width: 1200px;
     justify-content: space-evenly;
     align-items: baseline;
     flex-direction: row;
@@ -15,20 +15,50 @@ body {
     left: 50%;
     border-radius: 5px;
     background-color: #f2f2f2;
-    padding: 50px;
+    padding: 35px;
     transform: translate(-50%, -50%);
 }
 
 .flex-child {
     flex: 1;
+    width: 500px;
+}
+
+.flex-middle {
+    text-align: left;
+    flex-grow: 1;
+    width: 300px;
+}
+
+.table_headers {
+    border: 3px dotted lightblue;
+    border-radius: 10px;
+}
+
+.email-span {
+    margin-left: 40px;
+}
+
+.span{
+    float: right;
+    margin-right: 20px;
+}
+
+.name_span {
+    margin-right: 20px;
 }
 
 form {
-    display: inline-block;
+    display: inline;
+}
+
+h1 {
+    text-align: center;
 }
 
 span {
-    margin-right: 10px;
+    text-align: left;
+    margin-right: 30px;
 }
 
 input[type=text], input[type=password], input[type=email], select {
@@ -44,7 +74,14 @@ input[value=Save] {
     background-color: lightgreen;
 }
 
-input[value=Cancel] {
+input[value=Delete] {
+    border-radius: 4px;
+    border: none;
+    padding: 5px;
+    background-color: lightcoral;
+}
+
+input[value=Cancel], input[value=Edit] {
     border-radius: 4px;
     border: none;
     padding: 5px;
