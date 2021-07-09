@@ -14,6 +14,18 @@ import models.User;
 import servlets.UserServlet;
 
 public class UserService {
+    
+    
+    
+    
+      public static void generateAllUsers(UserDB userDB, HttpServletRequest request) {
+        try {
+            List<User> users = userDB.getAll();
+            request.setAttribute("users", users);
+        } catch (Exception ex) {
+            Logger.getLogger(UserServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 
     public static void deleteUser(String userEmailToDelete, UserDB userDB) {
         try {

@@ -100,7 +100,7 @@ public class UserServlet extends HttpServlet {
     }
 
     private void generateUsers(UserDB userDB, HttpServletRequest request) {
-        RoleService.generateAllUsers(userDB, request);
+        UserService.generateAllUsers(userDB, request);
 
     }
 
